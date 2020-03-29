@@ -39,7 +39,7 @@ body {
 
 .about {
   height: 680px;
-   background: url(/image/bg.jpg) no-repeat ;
+   background: url(image/bg.jpg) no-repeat ;
    border-radius: 14px;
    background-size: 500px;
 }
