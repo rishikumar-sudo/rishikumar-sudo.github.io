@@ -28,23 +28,25 @@ body {
   width: 100%;
   border-radius: 14px;
   margin-top: -115px;
-  width: 440px;
-  max-height: 600px;
+  width: 500px;
+  max-height: 700px;
   text-align: center;
-
   font-family: arial;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-  background: url(/image/bg.jpg) no-repeat;
   background-color: #fff;
+ 
 }
 
 .about {
-  height: 580px;
+  height: 680px;
+   background: url(/image/bg.jpg) no-repeat ;
+   border-radius: 14px;
+   background-size: 500px;
 }
 .p-image {
   position: absolute;
-  top: 16%;
-  left: 28%;
+  top: 21%;
+  left: 32%;
 }
 .image--cover {
   width: 120px;
@@ -763,7 +765,7 @@ strong {
   left: 37%;
   background-color: #fff;
   height: 100%;
-  overflow: scroll;
+  
   text-align: center;
 }
 .work .inner {

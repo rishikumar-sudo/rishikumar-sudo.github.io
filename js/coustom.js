@@ -12,7 +12,7 @@ $('.tab-profile').click(function () {
     
 });
 $('.tab-work').click(function () {
-    $(".card,.work,.contact").hide('slow');
+    $(".card,.resume,.contact").hide('slow');
     $('.work').show('slow');
      $('.l3').addClass('active');
     $(".l1,.l2,.l4").removeClass('active');
