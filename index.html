@@ -1,236 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rishi Yadav | Personal Protfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Developer & Designer from India making interactive Things." />
-    
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/gradient.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="./image/favicon.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  </head>
-  <body>
-  <div class="gradients">
-        <ul class="bg-bubble">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Rishi Kumar</h1>
+        <h2>Java Dev / Android Dev / Hooman</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <h2>work title</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                 in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <button class="btn_one" href="Rishi-Kumar_Resume.pdf"></a>Download Cv</button>
             
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-    </ul>
-    <div class="container">
-        
-        <div class="pa">
-        <div class="card" >
-           <div class="about" >
-       <div class="p-image">
-               <img src="http://imgc.allpostersimages.com/images/P-473-488-90/68/6896/2GOJ100Z/posters/despicable-me-2-minions-movie-poster.jpg" alt="" class="image--cover" />
-              </div>
-               <h3>Rishi Yadav</h3>
-               <p>Hi i’m <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-               <div class="btn-social">
-                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="#"><i class="fas fa-laptop-code" aria-hidden="true"></i></a>
-              </div>
-              <button class="btn-download">
-                <h2><a href="#download">
-                  Download Cv</a></h2>
-              </button>
-           </div>
-          
-           
-          </div>    
-         <div class="menu">
-            <ul class="tabs">
-                  <li class="l1 active tmenu"><a href="#profile" class="tab-profile"><i class="fa fa-user" aria-hidden="true"></i>Home</a></li>
-                  <li class="l2 tmenu " ><a href="#resume" class="tab-resume"><i class="fab fa-wpexplorer" aria-hidden="true"></i>Resume</a></li>
-                  <li class="l3 tmenu"><a href="#portfolio" class="tab-work"><i class="fab" aria-hidden="true">&#xf2da;</i>Portfolio</a></li>
-                  <li class="l4 tmenu"><a href="#contact" class="tab-contact"><i class="fab fa-telegram" aria-hidden="true"></i>Contact</a></li>
-            </ul>
-    
-        </div>
-      </div>
-   </div>
-   <!--Resume Section-->
-   <section class="resume">
-     <div class="res-container">
-         <div class="about_me">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat officia blanditiis animi aut perspiciatis, eveniet enim voluptatibus est, mollitia omnis fugit a consectetur iure exercitationem, velit iste. Consequuntur, qui dolor?</p>
-         </div>
-         
-         <div class="skil_bars">
-           <div class="row " style=" position: relative;
-           left: -5%;">
-               <h1>My Skills</h1>
-               <div class="col col-d-6 col-d-4 ">
-                <div class="progerss-bar">
-                  <div class="bar-titile">HTML</div>
-                  <div class="bar ">
-                      <div class="bar-inner html1" style="width: 90%; background: #ef6267;">
-                        <div class="percentage">90%</div></div>
-                  </div>
-               </div>
-               </div>
-               <div class="col col-d-6 col-d-4">
-                <div class="progerss-bar" style="padding-left: 15px; ">
-                  <div class="bar-titile">css</div>
-                  <div class="bar ">
-                      <div class="bar-inner css" style="width: 60%;
-                      background: #1cae80;">
-                        <div class="percentage">60%</div></div>
-                  </div>
-               </div>
-              </div>
-              <div class="col col-d-6 col-d-4">
-                <div class="progerss-bar " >
-                  <div class="bar-titile">Java</div>
-                  <div class="bar ">
-                      <div class="bar-inner java"style="width: 75%;background: #4eaeff;">
-                        <div class="percentage">75%</div>
-                      </div>
-                  </div>
-               </div>
-               
-               </div>
-               <div class="col col-d-6 col-d-4">
-                <div class="progerss-bar "style="padding-left: 15px;">
-                  <div class="bar-titile">android</div>
-                  <div class="bar ">
-                      <div class="bar-inner android" width: 55%;
-                      background: #1cae80;>
-                        <div class="percentage">55%</div></div>
-                  </div>
-               </div>
-              </div>
-             
-         
-         </div></div>
-         
-         <!--Education Section-->
-        <div class="education">
-                <div class="col-header">
-                    <div class="icon-box">
-                        <span class="fas fa-graduation-cap"></span>
-                    </div> 
-                    <h1>Education</h1>
-                </div>
-                
-                <!--Timeline Block-->
-                <div class="timeline-block">
-                    <div class="inner-box">
-                        <p><h5 class="vertical">Bachelor of Scince</h5>
-                        <div class="date">Apr 2010 - May 2004, KNP University.</div>
-                        <div class="text">The Love Boat promises something form join us here each week my friends make you're sure to get a smile a shadowy flight into the dangerous world of a man who does not exist to explore strange new worlds.</div>
-                      </p></div>
-                </div>
 
-                <!--Timeline Block-->
-                <div class="timeline-block">
-                    <div class="inner-box">
-                        <h5>Master of Computer of Application</h5>
-                        <div class="date">Sep 2004 - Jan 2006, Delhi University.</div>
-                        <div class="text ">The Love Boat promises something form join us here each week my friends make you're sure to get a smile a shadowy flight into the dangerous world of a man who does not exist to explore strange new worlds.</div>
-                    </div>
-                </div>
-
-                <!--Timeline Block-->
-                <div class="timeline-block">
-                    <div class="inner-box">
-                        <h5>10 th Master of Computer of Application</h5>
-                        <div class="date">June 2006 - Apr 2007, Knp.</div>
-                        <div class="text">The Love Boat promises something form join us here each week my friends make you're sure to get a smile a shadowy flight into the dangerous world of a man who does not exist to explore strange new worlds.</div>
-                    </div>
-                </div>
-                
-              
-        </div>
        
-        <div class="btn-download-resume">
-          <a href="http://">Download  Resume PDf</a>  </div> 
-    </section>    
-    <!--Work Section-->   
-  <section class="work">
-    <div class="inner">
-     <div class="project-header">
-       <h1>Here are Some of My Project</h1>
-     </div>
-     <div class="project-page">
-       <ul class="list-project">
-         <li class="project-item">
-          <a href="#"> <img class="img-ch"src="/image/bg.jpg" alt="Rishi"  height= "140px"
-             width= "200px"/>
-             <h5>Web App</h5>
-             <p>Youtube RealTime</p> </a>
-         </li>
-         <li class="project-item">
-          <a href="#"> <img class="img-ch"src="/image/bg.jpg" alt="Rishi"  height= "140px"
-             width= "200px"/>
-             <h5>Web App</h5>
-             <p>Sun Set Time</p> </a>
-          
-         </li>
-         <li class="project-item">
-          <a href="#"> <img class="img-ch"src="/image/bg.jpg" alt="Rishi"  height= "140px"
-             width= "200px"/>
-             <h5>Andriod App</h5>
-             <p>NewsBudy App</p> </a>
-          
-         </li>
-         <li class="project-item">
-          <a href="#"> <img class="img-ch"src="/image/bg.jpg" alt="Rishi"  height= "140px"
-             width= "200px"/>
-             <h5>Andoid App</h5>
-             <p>UrlSortner</p> </a>
-          
-         </li>
-         <li class="project-item">
-          <a href="#"> <img class="img-ch"src="/image/bg.jpg" alt="Rishi"  height= "140px"
-             width= "200px"/>
-             <h5>Andriod App</h5>
-             <p>Wallpaper Downloader</p> </a>
-          
-         </li>
-         <li class="project-item">
-          <a href="#"> <img class="img-ch"src="/image/bg.jpg" alt="Rishi"  height= "140px"
-             width= "200px"/>
-             <h5>Web App</h5>
-             <p>UrlSortner</p> </a>
-          
-         </li>
-         
-       </ul>
-     </div></div>
-  </section>
-  <section class="contact">
-    <div class="contact-header"><h1 class="title">I'd love to talk.</h1>
-      <h2>I'm always looking for opportunities to work on exciting projects. Let's make something great, together.</h2>
-      </div>
-    <div class="my-mail">
-      <h1><a href="mailto:mytechtalk99@gmail.com">mytechtalk99@gmail.com</a></h1>
+        </section>
     </div>
-    <div class="social-media">
-      <ul>
-                   <li><a target="_blank" rel="noopener" href="#" title="GitHub"><i class="fab fa-github"></i></a></li>
-                    <li><a target="_blank" rel="noopener" href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a target="_blank" rel="noopener" href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a target="_blank" rel="noopener" href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-                    <li><a target="_blank" rel="noopener" href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a target="_blank" rel="noopener" href="#" title="Steam"><i class="fab fa-steam"></i></a></li>
-                    <li><a target="_blank" rel="noopener" href="#" title="PayPal"><i class="fab fa-paypal"></i></a></li>
-      </ul>
-    </div>
-  </section>
-  </div>
-  <script src="./js/coustom.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor 
+                    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.
+                </p>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <p>
+                    i do eveything ;)
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made by Rishi<br> <a href="#">MyTechTalk</a>
+        </div>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
