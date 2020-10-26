@@ -46,6 +46,25 @@ body {
     height:100%;
     display:inline-block;
 }
+.p-image {
+   
+  }
+  .image--cover {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: cover;
+    border: 2px solid;
+    object-position: center right;
+    border-color: #fff;
+  }
+  .image--cover:hover {
+    box-shadow: 0 0 5px 9px rgba(241, 244, 245, 0.5);
+    cursor: pointer;
+    border: 3px solid;
+    border-color: wheat;
+  }
 .box1 {
     background:rgb(255, 50, 50);
 }
@@ -64,6 +83,17 @@ body {
     font-size:19px;
     color:#fff;
     text-decoration:underline;
+}
+.le{
+    width: 140px;
+    position: relative;
+    left: 30%;
+}
+.ri{
+    width: 140px;
+    position: relative;
+    left: 55%;
+    top: -10%;
 }
 #middle {
     width:100vw;
