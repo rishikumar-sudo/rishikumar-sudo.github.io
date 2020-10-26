@@ -3,7 +3,7 @@
 body {
     padding:0px;
     margin:0px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://raw.githubusercontent.com/Ashutosh24197/Ashutosh24197.github.io/master/resources/css/img/hero.jpeg&w=1550&q=80") center center;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://raw.githubusercontent.com/Ashutosh24197/Ashutosh24197.github.io/master/resources/css/img/hero.jpeg") center center;
     background-size:cover;
     width:100vw;
     height:100vh;
